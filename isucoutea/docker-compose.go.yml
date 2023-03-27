@@ -1,0 +1,7 @@
+version: '3.0'
+services:
+  app:
+    build:
+      context: ./webapp/go
+    environment:
+      ISUCOUTEA_RUN_TYPE: "${ISUCOUTEA_RUN_TYPE-run_go}"
